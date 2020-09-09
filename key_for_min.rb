@@ -6,6 +6,9 @@ def key_for_min_value(name_hash)
   lowest =  nil
   name_hash.each do |key, value|
     if default == 0|| value < default
-      lowest = value
-      
+      default = value
+      lowest = key
+    end
+  end
+  name_hash
 end
